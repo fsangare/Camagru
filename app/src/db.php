@@ -1,6 +1,6 @@
 <?php
 $host = 'mysql';
-$db = 'test_kama_sugru';
+$db = 'test_kamagru';
 $user = 'root';
 $pass = 'password';
 $charset = 'utf8';
