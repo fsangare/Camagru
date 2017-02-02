@@ -39,6 +39,7 @@ class RequestRepository
         $statement->bindParam(':email', $request->email);
         $statement->bindParam(':frame', $request->frame);
         $statement->bindParam(':image', $request->image);
+        $statement->bindParam(':password', $request->password);
         $statement->bindParam(':test', $request->test);
 
         $statement->execute();
@@ -48,5 +49,11 @@ class RequestRepository
     {
         $count = $this->db->query('select count(*) from requests')->fetchColumn();
         return $count;
+    }
+
+    public function getUsers()
+    {
+        $users = $this->db->query('select login, email from requests');
+        return $users;
     }
 }

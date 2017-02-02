@@ -8,6 +8,7 @@ class Request
 {
     public $id;
     public $email;
+    public $password;
     public $test;
     public $frame;
     public $image;
@@ -19,6 +20,7 @@ class Request
             $this->image= $data['image'];
             $this->email = $data['email'];
             $this->test = $data['test'];
+            $this->password = $data['password'];
         }
     }
 }

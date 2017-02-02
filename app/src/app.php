@@ -1,5 +1,13 @@
 <?php
 session_start();
+require __DIR__ . '/../requests/Request.php';
+require __DIR__ . '/../requests/RequestRepository.php';
+require __DIR__ . '/user.php';
+
+use App\Requests\Request;
+use App\Requests\RequestRepository;
+use App\User;
+
 ?>
 <html>
 <HEAD>
